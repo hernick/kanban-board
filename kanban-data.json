@@ -1,0 +1,1202 @@
+{
+  "meta": {
+    "source": "Hermes kanban workspaces",
+    "synced_at": "2026-11-14T23:17:36.540Z"
+  },
+  "tasks": [
+    {
+      "id": "t_0ce030c1",
+      "title": "Comida casera salada de semana, plato único rioplatense: rico, caliente, no de fiesta ni de dieta.",
+      "status": "todo",
+      "project": "comer",
+      "summary": "delivery-shortlist-2026-11-12 Comida casera salada de semana, plato único rioplatense: rico, caliente, no de fiesta ni de dieta. No hay precios en vivo ni locales abiertos. Bandas cualitativas. Referencia de mercado abril 2026 (milanesa ~21",
+      "files": [
+        "delivery-shortlist.json",
+        "delivery-shortlist.md"
+      ],
+      "content": {
+        "id": "delivery-shortlist-2026-11-12",
+        "locale": "es-AR",
+        "fecha": "2026-11-12",
+        "dia": "jueves",
+        "comida": "cena",
+        "porciones": 2,
+        "presupuesto": "medio",
+        "cocina_hoy": "indeciso",
+        "antojo": "Comida casera salada de semana, plato único rioplatense: rico, caliente, no de fiesta ni de dieta.",
+        "frases_busqueda": [
+          "milanesa con puré",
+          "fideos con tuco",
+          "pollo al horno con papas",
+          "guiso de lentejas",
+          "empanadas de carne al horno"
+        ],
+        "apps": [
+          "PedidosYa",
+          "Rappi"
+        ],
+        "apps_secundarias_promos": [
+          "MODO",
+          "Cuenta DNI"
+        ],
+        "categorias_match": [
+          "Milanesas",
+          "Pastas",
+          "Pollo",
+          "Empanadas",
+          "Pizzas",
+          "Tartas"
+        ],
+        "categorias_evitar": [
+          "Sushi",
+          "Poke",
+          "Ensaladas",
+          "Picadas",
+          "Hamburguesas gourmet"
+        ],
+        "disclaimer_precios": "No hay precios en vivo ni locales abiertos. Bandas cualitativas. Referencia de mercado abril 2026 (milanesa ~21000 ARS, empanada ~3100, pizza ~25000) más envío variable y tarifa de servicio 1.5–2%. No usar esos montos como ticket de esta noche.",
+        "bandas": [
+          "economico",
+          "medio",
+          "medio-alto"
+        ],
+        "ideas": [
+          {
+            "n": 1,
+            "nombre": "Milanesa con puré o napolitana x2",
+            "match": "alto",
+            "categoria": "Milanesas",
+            "frases": [
+              "milanesa con puré",
+              "milanesa napolitana",
+              "mila con guarnición"
+            ],
+            "pedido_ejemplo": "2 milanesas (carne o pollo) + puré o papas",
+            "banda": "medio → medio-alto",
+            "vs_cocinar": "Casa gana si hay carne/rebozador y 40 min. Pedir si no hay ganas de freír/horno o faltan insumos."
+          },
+          {
+            "n": 2,
+            "nombre": "Fideos / ñoquis / sorrentinos con tuco",
+            "match": "alto",
+            "categoria": "Pastas",
+            "frases": [
+              "fideos con tuco",
+              "ñoquis",
+              "sorrentinos",
+              "spaghetti bolognesa"
+            ],
+            "pedido_ejemplo": "2 porciones o 1 fuente para compartir, salsa tuco/filetto",
+            "banda": "medio",
+            "vs_cocinar": "Casa gana con fideos + tomate. Pedir si se quiere plato listo caliente."
+          },
+          {
+            "n": 3,
+            "nombre": "Pollo con papas (rotisería / horno)",
+            "match": "alto",
+            "categoria": "Pollo",
+            "frases": [
+              "pollo al horno",
+              "pollo con papas",
+              "cuarto de pollo",
+              "medio pollo"
+            ],
+            "pedido_ejemplo": "1/2 pollo o 2 cuartos + papas",
+            "banda": "medio",
+            "vs_cocinar": "El horno de casa tarda parecido y rinde sobras. Pedir si no hay pollo o no se quiere prender horno."
+          },
+          {
+            "n": 4,
+            "nombre": "Empanadas de carne al horno (8–12 u.)",
+            "match": "alto",
+            "categoria": "Empanadas",
+            "frases": [
+              "empanadas de carne",
+              "empanadas al horno",
+              "docena empanadas"
+            ],
+            "pedido_ejemplo": "8–12 empanadas, mayoría carne, algunas jamón y queso; horneadas",
+            "banda": "economico → medio",
+            "vs_cocinar": "Hacer masa supera 40 min. Si hay tapas en freezer, casa. Si no, mejor idea para pedir.",
+            "recomendado_si_pedir": true
+          },
+          {
+            "n": 5,
+            "nombre": "Pizza muzzarella o jamón y morrones (grande para 2)",
+            "match": "medio",
+            "categoria": "Pizzas",
+            "frases": [
+              "pizza muzzarella",
+              "pizza jamón y morrones",
+              "pizza al molde"
+            ],
+            "pedido_ejemplo": "1 pizza grande simple para 2",
+            "banda": "medio",
+            "vs_cocinar": "No es el antojo principal. Pedir solo con envío gratis + % OFF; si el checkout se va a medio-alto, volver a 1 o 4."
+          },
+          {
+            "n": 6,
+            "nombre": "Tarta salada o vianda casera (proxy del guiso)",
+            "match": "medio",
+            "categoria": "Tartas",
+            "frases": [
+              "tarta",
+              "vianda",
+              "comida casera",
+              "guiso",
+              "lentejas"
+            ],
+            "pedido_ejemplo": "Tarta jamón y queso/verdura o vianda de milanesa/guiso si aparece",
+            "banda": "medio",
+            "vs_cocinar": "Guiso de lentejas en casa es el más barato y rinde 2 días. Pedir tarta/vianda solo si no hay legumbre ni ganas de olla. El guiso casi no existe como categoría de app."
+          }
+        ],
+        "cazar_ofertas": [
+          "Abrir PedidosYa y Rappi; comparar el mismo plato.",
+          "Cargar dirección antes de mirar precios o 'abierto'.",
+          "PedidosYa → Promociones (Restaurantes / Mercados / Medios de pago).",
+          "Keywords: Promociones, Cupón, Envío gratis, % OFF, 2x1, 2da al 50%, Combo, Plus/Prime.",
+          "Buscar las frases del antojo, no un restaurante.",
+          "Decidir por el total de checkout (comida + envío + tarifa ~1.5–2% + propina), banda medio.",
+          "Jueves: chequear Medios de pago; no asumir que el reintegro cubre restaurantes.",
+          "Un cupón por pedido; no inventar que un local está abierto."
+        ],
+        "regla_cocinar_vs_pedir": {
+          "pedir_si_2_o_mas": [
+            "No hay ganas de prender hornalla/horno",
+            "Faltan 2+ ingredientes clave",
+            "Quedan menos de ~25 min hasta comer",
+            "Checkout con envío gratis o % OFF en banda medio"
+          ],
+          "cocinar_si_cualquiera": [
+            "Hay proteína + hidrato y 40 min de energía",
+            "Checkout se va a medio-alto sin promo",
+            "Antojo = guiso de lentejas y hay lentejas"
+          ],
+          "desempate_esta_noche": "Si el inventario cubre milanesa, fideos con tuco o pollo con papas → cocinar. Si no cubre y no hay ganas → pedir idea 4 (empanadas) o 1 (milanesa). Pizza solo con promo fuerte. Guiso no se pide salvo vianda explícita."
+        }
+      }
+    },
+    {
+      "id": "t_2471d132",
+      "title": "Comida casera salada de semana, plato único rioplatense: rico, caliente, no de fiesta ni de dieta. Sesgo: milanesa / pasta con tuco / pollo al horno / guiso, según lo que haya en casa.",
+      "status": "todo",
+      "project": "comer",
+      "summary": "America/Argentina/Buenos_Aires Comida casera salada de semana, plato único rioplatense: rico, caliente, no de fiesta ni de dieta. Sesgo: milanesa / pasta con tuco / pollo al horno / guiso, según lo que haya en casa. Banda casera de semana, ",
+      "files": [
+        "todays-meal-brief.json",
+        "todays-meal-brief.md"
+      ],
+      "content": {
+        "id": "meal-brief-2026-11-12",
+        "locale": "es-AR",
+        "variante": "rioplatense",
+        "fecha": "2026-11-12",
+        "dia": "jueves",
+        "hora_local": "17:51",
+        "tz": "America/Argentina/Buenos_Aires",
+        "comida": "cena",
+        "antojo": "Comida casera salada de semana, plato único rioplatense: rico, caliente, no de fiesta ni de dieta. Sesgo: milanesa / pasta con tuco / pollo al horno / guiso, según lo que haya en casa.",
+        "antojo_tags": [
+          "casero",
+          "salado",
+          "semana",
+          "plato-unico",
+          "rioplatense",
+          "caliente"
+        ],
+        "frases_busqueda": [
+          "milanesa con puré",
+          "fideos con tuco",
+          "pollo al horno con papas",
+          "guiso de lentejas",
+          "empanadas de carne al horno"
+        ],
+        "restricciones": {
+          "dieta": "omnívora (asumida)",
+          "alergias": [],
+          "intolerancias": [],
+          "evitar": [
+            "fiesta / asado largo",
+            "sushi / comida muy elaborada",
+            "ayuno o dieta estricta no declarada"
+          ],
+          "notas": "No hay alergias, vegetarianismo, veganismo, celiaco, ni restricciones médicas declaradas."
+        },
+        "tiempo_min": 40,
+        "porciones": 2,
+        "presupuesto": "medio",
+        "presupuesto_notas": "Banda casera de semana, no gourmet. No fijar montos en ARS (se vencen). Delivery: banda media de PedidosYa/Rappi, no premium.",
+        "cocina_hoy": "indeciso",
+        "cocina_hoy_razon": "El pedido original pide las dos vías: cocinar con lo de la heladera/despensa (recetas + lista de compra) y, si hoy no se cocina, delivery con ofertas. Sin señal explícita de ganas de cocinar.",
+        "herramientas_cocina": [
+          "hornallas",
+          "horno",
+          "sarten",
+          "olla",
+          "cacerola"
+        ],
+        "inventario": "No vino inventario real. Usar el ejemplo de t_6c41119b (heladera/freezer/despensa).",
+        "supuestos": [
+          "Es cena de un jueves ~18h en zona Río de la Plata.",
+          "Hogar de 2 comensales (puede ser 3–4; ver preguntas).",
+          "Cocina básica completa; no se asume air fryer, robot, ni parrilla prendida.",
+          "Omnívoro, sin alergias ni dieta especial.",
+          "Antojo no nombrado → sesgo casero salado de semana, no un plato único cerrado.",
+          "Presupuesto medio; no se inventan precios en vivo.",
+          "cocina_hoy = indeciso para no cortar ni recetas ni delivery."
+        ],
+        "preguntas_clarificadoras": [
+          "¿Hoy tenés ganas de cocinar o preferís pedir?",
+          "¿Cuántos comen? (¿2, 3, 4?)",
+          "¿Hay alergias, celiaco, vegetariano u otra dieta?",
+          "¿Cuánto tiempo bancás: 20, 40 o 60+ minutos?",
+          "¿Hay un antojo concreto (milanesa, pasta, guiso, algo liviano) o va cualquiera casero?"
+        ],
+        "uso_downstream": {
+          "t_7a913173": "Proponer 3–5 recetas contra frases_busqueda + inventario; si cocina_hoy sigue indeciso, incluir también 2 opciones ultra-rápidas 'por si cambias de idea'.",
+          "t_0ce030c1": "Armar shortlist de delivery para el mismo antojo (PedidosYa/Rappi, sin precios inventados ni locales 'abiertos').",
+          "t_cecfeaee": "Lista de compra solo de faltantes de las recetas elegidas; porciones=2."
+        }
+      }
+    },
+    {
+      "id": "t_4c6f296e",
+      "title": "¿Qué te gustaría comer?",
+      "status": "todo",
+      "project": "comer",
+      "summary": "{}",
+      "files": [],
+      "content": {}
+    },
+    {
+      "id": "t_6c41119b",
+      "title": "Inventario",
+      "status": "todo",
+      "project": "comer",
+      "summary": "Inventario plausible de un hogar argentino/uruguayo de 2–3 personas. No es un dump real del usuario. Downstream puede usarlo para hay/falta hasta que peguen el prompt de actualización. ",
+      "files": [
+        "inventory.example.json",
+        "INVENTORY.md",
+        "inventory.schema.json"
+      ],
+      "content": {
+        "version": 1,
+        "actualizado": "2026-11-12",
+        "fuente": "ejemplo",
+        "hogar": "rioplatense",
+        "notas": "Inventario plausible de un hogar argentino/uruguayo de 2–3 personas. No es un dump real del usuario. Downstream puede usarlo para hay/falta hasta que peguen el prompt de actualización.",
+        "items": [
+          {
+            "id": "huevos",
+            "nombre": "huevos",
+            "aliases": [
+              "huevo",
+              "maple de huevos"
+            ],
+            "ubicacion": "heladera",
+            "cantidad": 8,
+            "cantidad_aprox": null,
+            "unidad": "unidades",
+            "vencimiento": "2026-11-26",
+            "estado": "cerrado",
+            "categoria": "proteina",
+            "seccion_compra": "lacteos",
+            "notas": null
+          },
+          {
+            "id": "leche",
+            "nombre": "leche entera",
+            "aliases": [
+              "leche"
+            ],
+            "ubicacion": "heladera",
+            "cantidad": 1,
+            "cantidad_aprox": null,
+            "unidad": "l",
+            "vencimiento": "2026-11-18",
+            "estado": "abierto",
+            "categoria": "lacteo",
+            "seccion_compra": "lacteos",
+            "notas": "Sachet empezado"
+          },
+          {
+            "id": "queso-cremoso",
+            "nombre": "queso cremoso",
+            "aliases": [
+              "cremoso",
+              "queso para pizza",
+              "muzzarella",
+              "mozzarella"
+            ],
+            "ubicacion": "heladera",
+            "cantidad": 250,
+            "cantidad_aprox": null,
+            "unidad": "g",
+            "vencimiento": "2026-11-22",
+            "estado": "abierto",
+            "categoria": "lacteo",
+            "seccion_compra": "lacteos",
+            "notas": null
+          },
+          {
+            "id": "queso-rallado",
+            "nombre": "queso rallado",
+            "aliases": [
+              "queso parmesano",
+              "reggianito rallado"
+            ],
+            "ubicacion": "heladera",
+            "cantidad": 80,
+            "cantidad_aprox": "poco",
+            "unidad": "g",
+            "vencimiento": "2026-12-10",
+            "estado": "abierto",
+            "categoria": "lacteo",
+            "seccion_compra": "lacteos",
+            "notas": null
+          },
+          {
+            "id": "manteca",
+            "nombre": "manteca",
+            "aliases": [
+              "mantequilla",
+              "butter"
+            ],
+            "ubicacion": "heladera",
+            "cantidad": 200,
+            "cantidad_aprox": null,
+            "unidad": "g",
+            "vencimiento": "2026-12-05",
+            "estado": "cerrado",
+            "categoria": "grasa",
+            "seccion_compra": "lacteos",
+            "notas": null
+          },
+          {
+            "id": "yogur",
+            "nombre": "yogur natural",
+            "aliases": [
+              "yogurt",
+              "yoghurt"
+            ],
+            "ubicacion": "heladera",
+            "cantidad": 2,
+            "cantidad_aprox": null,
+            "unidad": "unidades",
+            "vencimiento": "2026-11-16",
+            "estado": "cerrado",
+            "categoria": "lacteo",
+            "seccion_compra": "lacteos",
+            "notas": "Por vencer pronto"
+          },
+          {
+            "id": "tomate",
+            "nombre": "tomate",
+            "aliases": [
+              "tomates",
+              "tomate redondo"
+            ],
+            "ubicacion": "heladera",
+            "cantidad": 4,
+            "cantidad_aprox": null,
+            "unidad": "unidades",
+            "vencimiento": null,
+            "estado": "cerrado",
+            "categoria": "vegetal",
+            "seccion_compra": "verduleria",
+            "notas": null
+          },
+          {
+            "id": "lechuga",
+            "nombre": "lechuga criolla",
+            "aliases": [
+              "lechuga",
+              "hojas verdes"
+            ],
+            "ubicacion": "heladera",
+            "cantidad": 1,
+            "cantidad_aprox": "algo",
+            "unidad": "unidades",
+            "vencimiento": "2026-11-15",
+            "estado": "abierto",
+            "categoria": "vegetal",
+            "seccion_compra": "verduleria",
+            "notas": "Media cabeza"
+          },
+          {
+            "id": "zanahoria",
+            "nombre": "zanahoria",
+            "aliases": [
+              "zanahorias"
+            ],
+            "ubicacion": "heladera",
+            "cantidad": 3,
+            "cantidad_aprox": null,
+            "unidad": "unidades",
+            "vencimiento": null,
+            "estado": "cerrado",
+            "categoria": "vegetal",
+            "seccion_compra": "verduleria",
+            "notas": null
+          },
+          {
+            "id": "limon",
+            "nombre": "limón",
+            "aliases": [
+              "limones",
+              "citrico"
+            ],
+            "ubicacion": "heladera",
+            "cantidad": 2,
+            "cantidad_aprox": null,
+            "unidad": "unidades",
+            "vencimiento": null,
+            "estado": "cerrado",
+            "categoria": "vegetal",
+            "seccion_compra": "verduleria",
+            "notas": null
+          },
+          {
+            "id": "jamon-cocido",
+            "nombre": "jamón cocido",
+            "aliases": [
+              "jamon",
+              "fiambre"
+            ],
+            "ubicacion": "heladera",
+            "cantidad": 150,
+            "cantidad_aprox": "poco",
+            "unidad": "g",
+            "vencimiento": "2026-11-17",
+            "estado": "abierto",
+            "categoria": "proteina",
+            "seccion_compra": "fiambreria",
+            "notas": null
+          },
+          {
+            "id": "mayonesa",
+            "nombre": "mayonesa",
+            "aliases": [
+              "mayo"
+            ],
+            "ubicacion": "heladera",
+            "cantidad": 1,
+            "cantidad_aprox": "bastante",
+            "unidad": "frasco",
+            "vencimiento": "2027-03-01",
+            "estado": "abierto",
+            "categoria": "condimento",
+            "seccion_compra": "almacen",
+            "notas": null
+          },
+          {
+            "id": "perejil",
+            "nombre": "perejil",
+            "aliases": [
+              "perejil fresco"
+            ],
+            "ubicacion": "heladera",
+            "cantidad": 1,
+            "cantidad_aprox": "poco",
+            "unidad": "ramito",
+            "vencimiento": "2026-11-16",
+            "estado": "abierto",
+            "categoria": "vegetal",
+            "seccion_compra": "verduleria",
+            "notas": null
+          },
+          {
+            "id": "carne-picada",
+            "nombre": "carne picada",
+            "aliases": [
+              "carne molida",
+              "carne",
+              "vacío picado"
+            ],
+            "ubicacion": "freezer",
+            "cantidad": 0.5,
+            "cantidad_aprox": null,
+            "unidad": "kg",
+            "vencimiento": "2026-12-20",
+            "estado": "cerrado",
+            "categoria": "proteina",
+            "seccion_compra": "carniceria",
+            "notas": "Paquete de 500 g"
+          },
+          {
+            "id": "pollo",
+            "nombre": "pechuga de pollo",
+            "aliases": [
+              "pollo",
+              "suprema",
+              "pechuga"
+            ],
+            "ubicacion": "freezer",
+            "cantidad": 2,
+            "cantidad_aprox": null,
+            "unidad": "unidades",
+            "vencimiento": "2026-12-15",
+            "estado": "cerrado",
+            "categoria": "proteina",
+            "seccion_compra": "carniceria",
+            "notas": null
+          },
+          {
+            "id": "milanesas",
+            "nombre": "milanesas de nalga",
+            "aliases": [
+              "milanesa",
+              "milanesas"
+            ],
+            "ubicacion": "freezer",
+            "cantidad": 4,
+            "cantidad_aprox": null,
+            "unidad": "unidades",
+            "vencimiento": "2026-12-10",
+            "estado": "cerrado",
+            "categoria": "proteina",
+            "seccion_compra": "carniceria",
+            "notas": "Ya empanadas"
+          },
+          {
+            "id": "arvejas-congeladas",
+            "nombre": "arvejas congeladas",
+            "aliases": [
+              "arvejas",
+              "guisantes",
+              "peas"
+            ],
+            "ubicacion": "freezer",
+            "cantidad": 1,
+            "cantidad_aprox": "algo",
+            "unidad": "paquete",
+            "vencimiento": "2027-06-01",
+            "estado": "abierto",
+            "categoria": "vegetal",
+            "seccion_compra": "almacen",
+            "notas": "Bolsa empezada"
+          },
+          {
+            "id": "aceite-girasol",
+            "nombre": "aceite de girasol",
+            "aliases": [
+              "aceite",
+              "aceite neutro"
+            ],
+            "ubicacion": "despensa",
+            "cantidad": 0.7,
+            "cantidad_aprox": "bastante",
+            "unidad": "l",
+            "vencimiento": null,
+            "estado": "abierto",
+            "categoria": "grasa",
+            "seccion_compra": "almacen",
+            "notas": null
+          },
+          {
+            "id": "aceite-oliva",
+            "nombre": "aceite de oliva",
+            "aliases": [
+              "oliva",
+              "aoe"
+            ],
+            "ubicacion": "despensa",
+            "cantidad": 0.25,
+            "cantidad_aprox": "poco",
+            "unidad": "l",
+            "vencimiento": null,
+            "estado": "abierto",
+            "categoria": "grasa",
+            "seccion_compra": "almacen",
+            "notas": null
+          },
+          {
+            "id": "fideos",
+            "nombre": "fideos spaghetti",
+            "aliases": [
+              "pasta",
+              "tallarines",
+              "spaghetti",
+              "fideo"
+            ],
+            "ubicacion": "despensa",
+            "cantidad": 500,
+            "cantidad_aprox": null,
+            "unidad": "g",
+            "vencimiento": null,
+            "estado": "cerrado",
+            "categoria": "carbo",
+            "seccion_compra": "almacen",
+            "notas": "Un paquete cerrado"
+          },
+          {
+            "id": "arroz",
+            "nombre": "arroz largo fino",
+            "aliases": [
+              "arroz blanco",
+              "arroz"
+            ],
+            "ubicacion": "despensa",
+            "cantidad": 1,
+            "cantidad_aprox": "bastante",
+            "unidad": "kg",
+            "vencimiento": null,
+            "estado": "abierto",
+            "categoria": "carbo",
+            "seccion_compra": "almacen",
+            "notas": null
+          },
+          {
+            "id": "cebolla",
+            "nombre": "cebolla",
+            "aliases": [
+              "cebollas",
+              "cebolla morada"
+            ],
+            "ubicacion": "despensa",
+            "cantidad": 4,
+            "cantidad_aprox": null,
+            "unidad": "unidades",
+            "vencimiento": null,
+            "estado": "cerrado",
+            "categoria": "vegetal",
+            "seccion_compra": "verduleria",
+            "notas": null
+          },
+          {
+            "id": "ajo",
+            "nombre": "ajo",
+            "aliases": [
+              "dientes de ajo",
+              "cabeza de ajo"
+            ],
+            "ubicacion": "despensa",
+            "cantidad": 1,
+            "cantidad_aprox": "algo",
+            "unidad": "unidades",
+            "vencimiento": null,
+            "estado": "abierto",
+            "categoria": "vegetal",
+            "seccion_compra": "verduleria",
+            "notas": "Cabeza empezada, ~6 dientes"
+          },
+          {
+            "id": "papa",
+            "nombre": "papa",
+            "aliases": [
+              "papas",
+              "patata",
+              "patatas"
+            ],
+            "ubicacion": "despensa",
+            "cantidad": 1,
+            "cantidad_aprox": "algo",
+            "unidad": "kg",
+            "vencimiento": null,
+            "estado": "cerrado",
+            "categoria": "vegetal",
+            "seccion_compra": "verduleria",
+            "notas": null
+          },
+          {
+            "id": "tomate-lata",
+            "nombre": "tomate perita en lata",
+            "aliases": [
+              "tomate triturado",
+              "puré de tomate",
+              "tomate al natural",
+              "lata de tomate"
+            ],
+            "ubicacion": "despensa",
+            "cantidad": 2,
+            "cantidad_aprox": null,
+            "unidad": "lata",
+            "vencimiento": "2027-08-01",
+            "estado": "cerrado",
+            "categoria": "lata",
+            "seccion_compra": "almacen",
+            "notas": "400 g c/u"
+          },
+          {
+            "id": "atun-lata",
+            "nombre": "atún al natural",
+            "aliases": [
+              "atun",
+              "lata de atún"
+            ],
+            "ubicacion": "despensa",
+            "cantidad": 2,
+            "cantidad_aprox": null,
+            "unidad": "lata",
+            "vencimiento": "2027-04-01",
+            "estado": "cerrado",
+            "categoria": "lata",
+            "seccion_compra": "almacen",
+            "notas": null
+          },
+          {
+            "id": "lentejas",
+            "nombre": "lentejas secas",
+            "aliases": [
+              "lenteja",
+              "legumbres"
+            ],
+            "ubicacion": "despensa",
+            "cantidad": 400,
+            "cantidad_aprox": "algo",
+            "unidad": "g",
+            "vencimiento": null,
+            "estado": "abierto",
+            "categoria": "carbo",
+            "seccion_compra": "almacen",
+            "notas": null
+          },
+          {
+            "id": "harina",
+            "nombre": "harina 000",
+            "aliases": [
+              "harina",
+              "harina de trigo"
+            ],
+            "ubicacion": "despensa",
+            "cantidad": 1,
+            "cantidad_aprox": "algo",
+            "unidad": "kg",
+            "vencimiento": null,
+            "estado": "abierto",
+            "categoria": "carbo",
+            "seccion_compra": "almacen",
+            "notas": null
+          },
+          {
+            "id": "caldo",
+            "nombre": "caldo en cubitos",
+            "aliases": [
+              "cubitos de caldo",
+              "caldo de verdura",
+              "caldo de carne"
+            ],
+            "ubicacion": "despensa",
+            "cantidad": 8,
+            "cantidad_aprox": null,
+            "unidad": "cubitos",
+            "vencimiento": "2027-01-01",
+            "estado": "abierto",
+            "categoria": "condimento",
+            "seccion_compra": "almacen",
+            "notas": "Sabor verdura"
+          },
+          {
+            "id": "pan-rallado",
+            "nombre": "pan rallado",
+            "aliases": [
+              "rebozador"
+            ],
+            "ubicacion": "despensa",
+            "cantidad": 200,
+            "cantidad_aprox": "algo",
+            "unidad": "g",
+            "vencimiento": null,
+            "estado": "abierto",
+            "categoria": "carbo",
+            "seccion_compra": "almacen",
+            "notas": null
+          },
+          {
+            "id": "sal",
+            "nombre": "sal fina",
+            "aliases": [
+              "sal"
+            ],
+            "ubicacion": "despensa",
+            "cantidad": 1,
+            "cantidad_aprox": "lleno",
+            "unidad": "paquete",
+            "vencimiento": null,
+            "estado": "abierto",
+            "categoria": "condimento",
+            "seccion_compra": "almacen",
+            "notas": null
+          },
+          {
+            "id": "condimentos",
+            "nombre": "condimentos secos",
+            "aliases": [
+              "orégano",
+              "pimentón",
+              "ají molido",
+              "pimienta",
+              "comino",
+              "provenzal"
+            ],
+            "ubicacion": "despensa",
+            "cantidad": 1,
+            "cantidad_aprox": "bastante",
+            "unidad": "paquete",
+            "vencimiento": null,
+            "estado": "abierto",
+            "categoria": "condimento",
+            "seccion_compra": "almacen",
+            "notas": "Hay orégano, pimentón dulce, ají molido, pimienta negra y comino. Falta curry y jengibre."
+          }
+        ]
+      }
+    },
+    {
+      "id": "t_7a913173",
+      "title": "Citation ledger",
+      "status": "todo",
+      "project": "comer",
+      "summary": "{\"version\":1,\"sources\":[{\"id\":1,\"url\":\"https://www.cocinerosargentinos.com/recetas/carne/milanesas-con-pure\",\"title\":\"Milanesas con puré - Cocineros Argentinos\",\"accessed\":\"2026-11-12\"},{\"id\":2,\"url\":\"https://www.paulinacocina.net/pure-de-p",
+      "files": [
+        "citation-ledger.json",
+        "recetas-hoy.json",
+        "recetas-hoy.md"
+      ],
+      "content": {
+        "version": 1,
+        "sources": [
+          {
+            "id": 1,
+            "url": "https://www.cocinerosargentinos.com/recetas/carne/milanesas-con-pure",
+            "title": "Milanesas con puré - Cocineros Argentinos",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": 2,
+            "url": "https://www.paulinacocina.net/pure-de-papas-cremoso/33666",
+            "title": "Puré de papas cremoso - Paulina Cocina",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": 3,
+            "url": "https://www.paulinacocina.net/milanesa-napolitana-receta-y-apreciaciones-personales/5917",
+            "title": "Milanesa napolitana - Paulina Cocina",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": 4,
+            "url": "https://www.recetasnestle.com.ar/recetas/milanesas-a-la-napolitana",
+            "title": "Milanesas a la napolitana - Recetas Nestlé AR",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": 5,
+            "url": "https://www.paulinacocina.net/fideos-con-tuco/41149",
+            "title": "Fideos con tuco - Paulina Cocina",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": 6,
+            "url": "https://www.recetasnestle.com.ar/recetas/fideos-a-la-bolognesa",
+            "title": "Fideos a la bolognesa - Recetas Nestlé AR",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": 7,
+            "url": "https://www.lanacion.com.ar/recetas/platos-de-comida-principal/pollo-al-horno-con-papas-nid30062022",
+            "title": "Pollo al horno con papas - La Nación",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": 8,
+            "url": "https://elgourmet.com/recetas/pechuga-de-pollo-al-horno-con-papas-rostizadas",
+            "title": "Pechuga al horno con papas rostizadas - elGourmet",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": 9,
+            "url": "https://www.paulinacocina.net/guiso-lentejas-receta-infalible/10685",
+            "title": "Guiso de lentejas infalible - Paulina Cocina",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": 10,
+            "url": "https://www.paulinacocina.net/guiso-de-lentejas-facil/4295",
+            "title": "Guiso de lentejas fácil - Paulina Cocina",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": 11,
+            "url": "https://www.paulinacocina.net/como-hacer-empanadas-de-carne/9220",
+            "title": "Empanadas de carne - Paulina Cocina",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": 12,
+            "url": "https://www.paulinacocina.net/masa-para-empanadas/21456",
+            "title": "Masa para empanadas - Paulina Cocina",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": 13,
+            "url": "https://www.recetasnestlecam.com/recetas/pasta-con-vegetales-salteados-y-atun",
+            "title": "Pasta con vegetales y atún - Recetas Nestlé",
+            "accessed": "2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "id": "t_cecfeaee",
+      "title": "Lista de la compra",
+      "status": "todo",
+      "project": "comer",
+      "summary": "milanesas-napolitanas-con-pure Solo ítems tag falta o falta_opcional. hay no entra. Condimentos secos, sal, aceite, papa, cebolla, ajo, fideos, lentejas, proteínas del freezer y lácteos del ejemplo: cubiertos. ",
+      "files": [
+        "lista-compra.json",
+        "lista-compra.md"
+      ],
+      "content": {
+        "id": "lista-compra-2026-11-12",
+        "fecha": "2026-11-12",
+        "locale": "es-AR",
+        "porciones": 2,
+        "inventario": {
+          "fuente": "ejemplo",
+          "ref_task": "t_6c41119b",
+          "archivo": "inventory.example.json",
+          "nota": "No es un dump real. No se lista nada con cantidad > 0 ni cantidad_aprox distinta de nada."
+        },
+        "recetas_ref": "t_7a913173",
+        "brief_ref": "t_2471d132",
+        "mejor_ajuste_esta_noche": "milanesas-napolitanas-con-pure",
+        "regla": "Solo ítems tag falta o falta_opcional. hay no entra. Condimentos secos, sal, aceite, papa, cebolla, ajo, fideos, lentejas, proteínas del freezer y lácteos del ejemplo: cubiertos.",
+        "secciones_orden": [
+          "verduleria",
+          "almacen",
+          "carniceria_fiambreria",
+          "lacteos",
+          "otros"
+        ],
+        "compra_minima": {
+          "proposito": "Cocinar esta noche el mejor ajuste (milanesas napolitanas con puré, 2 porciones).",
+          "faltantes_requeridos": 0,
+          "items": [],
+          "nota": "No hace falta ir al súper. El inventario ejemplo cubre milanesas empanadas, jamón, cremoso, papa, leche, manteca, tomate de lata y ensalada. Nuez moscada es opcional y no bloquea."
+        },
+        "compra_completa": {
+          "proposito": "Unificar faltantes de las 5 recetas top + 2 ultra-rápidas. Ultra-rápidas: 0 faltantes.",
+          "items": [
+            {
+              "id": "tapas-empanada",
+              "nombre": "tapas de empanada para horno",
+              "cantidad": "1 paquete de 12 unidades",
+              "cantidad_para_2_porciones": "12 tapas (sobran 4–6)",
+              "seccion": "almacen",
+              "rol": "solo_si_receta",
+              "prioridad": "requerido_si_receta",
+              "tag_origen": "falta",
+              "recetas": [
+                "empanadas-de-carne-al-horno"
+              ],
+              "nota": "Único faltante requerido del ranking. Sin tapas, no forzar masa casera en 40 min."
+            },
+            {
+              "id": "morron",
+              "nombre": "morrón (rojo o mixto)",
+              "cantidad": "1–2 unidades",
+              "cantidad_para_2_porciones": "1/2 unidad por receta; 1–2 rinden varias cenas",
+              "seccion": "verduleria",
+              "rol": "basico_util",
+              "prioridad": "opcional",
+              "tag_origen": "falta_opcional",
+              "recetas": [
+                "fideos-con-tuco-de-picada",
+                "guiso-de-lentejas-de-semana",
+                "empanadas-de-carne-al-horno"
+              ],
+              "nota": "Mejora tuco, guiso y empanadas. Falta típica del inventario ejemplo; no es obligatorio esta noche."
+            },
+            {
+              "id": "laurel",
+              "nombre": "laurel (hojas secas)",
+              "cantidad": "1 sobre chico (~5–6 hojas)",
+              "cantidad_para_2_porciones": "1–2 hojas",
+              "seccion": "almacen",
+              "rol": "basico_util",
+              "prioridad": "opcional",
+              "tag_origen": "falta_opcional",
+              "recetas": [
+                "fideos-con-tuco-de-picada",
+                "guiso-de-lentejas-de-semana"
+              ],
+              "nota": "Básico barato de despensa. El tuco y el guiso salen sin él."
+            },
+            {
+              "id": "nuez-moscada",
+              "nombre": "nuez moscada",
+              "cantidad": "1 frasco chico (dura meses)",
+              "cantidad_para_2_porciones": "1 pizca en el puré",
+              "seccion": "almacen",
+              "rol": "solo_si_receta",
+              "prioridad": "opcional",
+              "tag_origen": "falta_opcional",
+              "recetas": [
+                "milanesas-napolitanas-con-pure"
+              ],
+              "nota": "Solo aroma del puré. No comprar si no se usa en casa."
+            },
+            {
+              "id": "tomillo",
+              "nombre": "tomillo fresco",
+              "cantidad": "1 ramito",
+              "cantidad_para_2_porciones": "1 ramita",
+              "seccion": "verduleria",
+              "rol": "solo_si_receta",
+              "prioridad": "opcional",
+              "tag_origen": "falta_opcional",
+              "recetas": [
+                "pechugas-al-horno-con-papas"
+              ],
+              "nota": "Sustituible con orégano que ya hay."
+            },
+            {
+              "id": "chorizo-colorado",
+              "nombre": "chorizo colorado",
+              "cantidad": "1 unidad (~120–150 g)",
+              "cantidad_para_2_porciones": "1 unidad",
+              "seccion": "carniceria_fiambreria",
+              "rol": "solo_si_receta",
+              "prioridad": "opcional",
+              "tag_origen": "falta_opcional",
+              "recetas": [
+                "guiso-de-lentejas-de-semana"
+              ],
+              "nota": "Guiso de bodegón. La versión de semana ya está con picada."
+            },
+            {
+              "id": "panceta",
+              "nombre": "panceta",
+              "cantidad": "100 g",
+              "cantidad_para_2_porciones": "100 g",
+              "seccion": "carniceria_fiambreria",
+              "rol": "solo_si_receta",
+              "prioridad": "opcional",
+              "tag_origen": "falta_opcional",
+              "recetas": [
+                "guiso-de-lentejas-de-semana"
+              ],
+              "nota": "No hace falta si se compra el chorizo; uno de los dos alcanza."
+            },
+            {
+              "id": "tomates-secos",
+              "nombre": "tomates secos",
+              "cantidad": "4 unidades (~50 g)",
+              "cantidad_para_2_porciones": "4 unidades",
+              "seccion": "almacen",
+              "rol": "solo_si_receta",
+              "prioridad": "opcional",
+              "tag_origen": "falta_opcional",
+              "recetas": [
+                "guiso-de-lentejas-de-semana"
+              ],
+              "nota": "Toque de la receta infalible; el tomate de lata ya cubre."
+            },
+            {
+              "id": "aceitunas",
+              "nombre": "aceitunas verdes",
+              "cantidad": "100 g (1 puñado)",
+              "cantidad_para_2_porciones": "1 puñado para 12 empanadas",
+              "seccion": "almacen",
+              "rol": "solo_si_receta",
+              "prioridad": "opcional",
+              "tag_origen": "falta_opcional",
+              "recetas": [
+                "empanadas-de-carne-al-horno"
+              ],
+              "nota": "Clásico del relleno rioplatense; el relleno sale sin ellas."
+            },
+            {
+              "id": "vino-tinto",
+              "nombre": "vino tinto de cocina",
+              "cantidad": "1 botella chica o ~100 ml si hay abierto",
+              "cantidad_para_2_porciones": "1/2 vaso (~100 ml)",
+              "seccion": "otros",
+              "rol": "solo_si_receta",
+              "prioridad": "opcional",
+              "tag_origen": "falta_opcional",
+              "recetas": [
+                "fideos-con-tuco-de-picada"
+              ],
+              "nota": "No comprar una botella solo para el tuco de jueves."
+            }
+          ]
+        },
+        "por_seccion": {
+          "verduleria": [
+            "morron",
+            "tomillo"
+          ],
+          "almacen": [
+            "tapas-empanada",
+            "laurel",
+            "nuez-moscada",
+            "tomates-secos",
+            "aceitunas"
+          ],
+          "carniceria_fiambreria": [
+            "chorizo-colorado",
+            "panceta"
+          ],
+          "lacteos": [],
+          "otros": [
+            "vino-tinto"
+          ]
+        },
+        "no_listar": [
+          "sal",
+          "aceite de girasol",
+          "aceite de oliva (poco, pero hay)",
+          "condimentos secos (orégano, pimentón, ají, pimienta, comino)",
+          "huevos",
+          "leche",
+          "queso cremoso",
+          "queso rallado",
+          "manteca",
+          "yogur",
+          "tomate fresco",
+          "lechuga",
+          "zanahoria",
+          "limón",
+          "jamón cocido",
+          "mayonesa",
+          "perejil",
+          "carne picada",
+          "pechuga de pollo",
+          "milanesas",
+          "arvejas congeladas",
+          "fideos",
+          "arroz",
+          "cebolla",
+          "ajo",
+          "papa",
+          "tomate perita en lata",
+          "atún",
+          "lentejas",
+          "harina 000",
+          "caldo en cubitos",
+          "pan rallado"
+        ],
+        "recetas_cero_compra": [
+          "milanesas-napolitanas-con-pure",
+          "fideos-con-tuco-de-picada",
+          "pechugas-al-horno-con-papas",
+          "guiso-de-lentejas-de-semana",
+          "fideos-con-atun",
+          "revuelto-jamon-queso"
+        ],
+        "conteo": {
+          "minima_items": 0,
+          "completa_items": 10,
+          "completa_requeridos": 1,
+          "completa_basicos_utiles": 2,
+          "completa_solo_si_receta_opcionales": 7,
+          "lacteos_a_comprar": 0,
+          "items_cubiertos_por_inventario_excluidos": 32
+        }
+      }
+    }
+  ]
+}
