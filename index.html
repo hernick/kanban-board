@@ -31,6 +31,14 @@
   header.app { max-width: 1100px; margin-bottom: 16px; }
   header.app h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -.3px; }
   header.app .sub { color: var(--muted); font-size: 13px; margin: 0; }
+  header.app .meta { color: var(--muted); font-size: 12px; margin-top: 4px; }
+  .controls { max-width: 1100px; margin-bottom: 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .controls button {
+    padding: 8px 12px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer;
+    font-size: 13px; background: #fff; color: var(--text);
+  }
+  .controls button:hover { border-color: var(--primary); color: var(--primary); }
+  .controls .spacer { flex: 1 1 auto; }
   .board { max-width: 1100px; display: flex; gap: 16px; }
   .column {
     flex: 1;
@@ -106,7 +114,14 @@
 <body>
   <div class="app">
     <h1>🍳 Kanban · ¿Qué te gustaría comer?</h1>
-    <p class="sub">Tareas para planear el menú con lo que hay en casa. Arrastra las tarjetas entre columnas y edita o añade las que necesites.</p>
+    <p class="sub">La carga se sincroniza con tu repositorio Kanban de Hermes. El tablero se actualiza sola cada minuto y puedes descargar/importar tareas.</p>
+    <div class="controls">
+      <button id="btn-sync" type="button">⬇️ Sincronizar (traer de GitHub)</button>
+      <button id="btn-download" type="button">⬇️ Descargar tareas (JSON)</button>
+      <input id="file-input" type="file" accept=".json" multiple style="display:none" />
+      <span class="spacer"></span>
+      <span class="meta" id="sync-status"></span>
+    </div>
   </div>
 
   <div class="board">
@@ -139,6 +154,7 @@
   <div class="toast" id="toast"></div>
 
 <script>
+  const DATA_URL = "https://raw.githubusercontent.com/hernick/kanban-board/main/kanban-data.json";
   const STORAGE_KEY = "comer-kanban-tasks-v1";
   const STATUSES = ["todo", "inprogress", "done"];
   const LABELS = { todo: "Por hacer", inprogress: "En progreso", done: "Hecho" };
@@ -152,18 +168,31 @@
     { id: "delivery", title: "Find delivery options if today is not a cooking day", status: "todo" }
   ];
 
-  let tasks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
-  if (tasks.length === 0) tasks = SEED.map(t => ({ ...t, project: "comer" }));
-
   const cards = {
     todo: document.getElementById("cards-todo"),
     inprogress: document.getElementById("cards-inprogress"),
     done: document.getElementById("cards-done")
   };
   const toastEl = document.getElementById("toast");
+  const statusEl = document.getElementById("sync-status");
+  let tasks = [];
 
   function escapeHtml(s) {
     return s.replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  }
+
+  async function loadTasks(quiet) {
+    try {
+      const res = await fetch(DATA_URL);
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const data = await res.json();
+      tasks = data.tasks || [];
+      if (!quiet) statusEl.textContent = "Actualizado desde GitHub (" + tasks.length + " tareas)";
+      return true;
+    } catch (e) {
+      statusEl.textContent = "Sin datos remotos, usando plantilla";
+      return false;
+    }
   }
 
   function render() {
@@ -200,11 +229,10 @@
           const src = tasks.find(t => t.id === card._drag);
           if (!src || src.status === s) return;
           src.status = s;
-          save(); render(); toast("➡️ " + t.title + " → " + LABELS[s]);
+          render(); toast("➡️ " + t.title + " → " + LABELS[s]);
         });
       });
     });
-    save();
   }
 
   function editCard(card, t) {
@@ -213,35 +241,69 @@
     const v = input.trim();
     if (!v) { toast("Título vacío"); return; }
     t.title = v;
-    save(); render(); toast("✏️ " + v);
+    render(); toast("✏️ " + v);
   }
 
   function deleteCard(card, t) {
     if (!confirm("¿Eliminar la tarea '" + t.title + "'?")) return;
     tasks = tasks.filter(x => x.id !== t.id);
-    save(); render(); toast("🗑️ Eliminada");
+    render(); toast("🗑️ Eliminada");
   }
 
-  function save() { localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks)); }
+  function save() { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks)); } catch(e){} }
 
   function toast(msg) {
     toastEl.textContent = msg; toastEl.classList.add("show");
     setTimeout(() => toastEl.classList.remove("show"), 1600);
   }
 
-  document.querySelectorAll(".add-form").forEach(form => {
-    form.addEventListener("submit", e => {
-      e.preventDefault();
-      const title = form.querySelector("input").value.trim();
-      if (!title) return;
-      const status = form.dataset.status;
-      const id = "t_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2, 6);
-      tasks.push({ id, title, status, project: "comer" });
-      form.querySelector("input").value = "";
-      render(); toast("➕ " + title);
-    });
+  async function doSync() {
+    statusEl.textContent = "Sincronizando…";
+    const ok = await loadTasks(true);
+    render();
+    toast(ok ? "Sincronizado con GitHub" : "Sin datos remotos, usando plantilla");
+  }
+
+  async function downloadTasks() {
+    const blob = new Blob([JSON.stringify({ descargado_en: new Date().toISOString(), tareas: tasks }, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "kanban-hermes-tareas.json";
+    a.click();
+    toast("Descargado kanban-hermes-tareas.json");
+  }
+
+  document.getElementById("btn-sync").addEventListener("click", doSync);
+  document.getElementById("btn-download").addEventListener("click", downloadTasks);
+
+  document.getElementById("file-input").addEventListener("change", async e => {
+    const files = e.target.files;
+    if (!files.length) return;
+    let count = 0;
+    for (const f of files) {
+      try {
+        const text = await f.text();
+        const parsed = JSON.parse(text);
+        if (parsed && parsed.id) {
+          const card = tasks.find(t => t.id && t.id === parsed.id);
+          if (card) {
+            const extra = {};
+            if (typeof parsed.titulo === 'string') extra.title = parsed.titulo;
+            if (typeof parsed.comida === 'string') extra.title = parsed.comida;
+            if (typeof parsed.antojo === 'string') extra.title = parsed.antojo;
+            if (typeof parsed.summary === 'string') extra.summary = parsed.summary;
+            Object.assign(card, extra);
+            count++;
+          }
+        }
+      } catch (err) { toast("Error leyendo " + f.name); }
+    }
+    if (count) { render(); toast("Importados " + count + " tarea(s) de Hermes"); }
+    e.target.value = "";
   });
 
+  loadTasks();
+  setInterval(() => { loadTasks(true); render(); }, 60000);
   render();
 </script>
 </body>
